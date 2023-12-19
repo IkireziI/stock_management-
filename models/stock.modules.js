@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const EmployeeSchema = new mongoose.Schema({
+const StockSchema = new mongoose.Schema({
     name: { required: true, type: String },
     measurementUnit: { required: true, type: String },
     amount: { required: true, type: String },
@@ -23,4 +23,4 @@ const EmployeeSchema = new mongoose.Schema({
     updateTime: { required: false, type: Date },
 });
 
-module.exports = mongoose.model('employee', EmployeeSchema);
+module.exports = mongoose.model('stock', StockSchema);
